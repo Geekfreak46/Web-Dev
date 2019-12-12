@@ -1,0 +1,17 @@
+body{
+    background-image: url("https://images.alphacoders.com/593/thumb-1920-593483.jpg");
+    height:400px;
+}
+.Front{
+    text-align: center;
+    color:#fff;
+}
+h1{
+    font-size: 84px;
+}
+h2{
+    font-size: 56px;
+}
+a{
+    color: azure;
+}
