@@ -85,7 +85,6 @@ percentage.addEventListener('click',()=>{
 });
 
 Decimal.addEventListener('click',()=>{
-    temp=currentNumber;
     currentNumber+='.';
     updateScreen(currentNumber);
 });
