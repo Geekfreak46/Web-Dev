@@ -9,8 +9,6 @@ const Decimal=document.querySelector('.decimal');
 let prevNumber='0';
 let currentNumber='0';
 let calculationOperator='';
-let chk=0;
-let temp='0'
 
 numbers.forEach((number)=>{
     number.addEventListener("click",(event)=>{
@@ -37,12 +35,7 @@ operators.forEach((operator)=>{
 });
 
 const inputOperator=(operator)=>{
-    if(chk===0){
-        prevNumber=currentNumber;
-    }
-    else{
-        prevNumber=parseFloat(currentNumber)
-    }
+    prevNumber=currentNumber;
     calculationOperator=operator;
     currentNumber='0';
 }
@@ -95,5 +88,4 @@ Decimal.addEventListener('click',()=>{
     temp=currentNumber;
     currentNumber+='.';
     updateScreen(currentNumber);
-    ch=1;
 });
